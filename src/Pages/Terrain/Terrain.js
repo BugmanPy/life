@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MainTerrain, ChunkRow, ChunkPiece } from "./style";
 import { terrainSizeInPx, chunkSizeInPx } from "../../Utils/constants";
+import Tree from "../../Components/Trees/Tree";
 
 function generateChunkIdData() {
   const numberOfChunkRowsAndPieces = terrainSizeInPx / chunkSizeInPx;
@@ -35,7 +36,9 @@ function Terrain() {
                   id={chunkPieceId}
                   key={chunkPieceId}
                   onClick={onChunkPress}
-                />
+                >
+                  <Tree/>
+                </ChunkPiece>
               );
             })}
           </ChunkRow>

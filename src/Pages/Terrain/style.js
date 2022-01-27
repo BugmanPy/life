@@ -13,6 +13,9 @@ export const MainTerrain = styled.section`
 `
 
 export const ChunkPiece = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: ${actualSize}px;
     width: ${actualSize}px;
     background-color: transparent;
