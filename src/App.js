@@ -1,9 +1,11 @@
 import './App.css';
+// -- Pages --
+import Terrain from './Pages/Terrain/Terrain';
 
 function App() {
   return (
     <div className="App">
-     Hello World
+     <Terrain/>
     </div>
   );
 }
