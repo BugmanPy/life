@@ -7,15 +7,16 @@ const actualSize = chunkSizeInPx-(borderSize*2)
 
 export const MainTerrain = styled.section`
     width: ${terrainSizeInPx}px;
-    height:  ${terrainSizeInPx}px;
+    /* height:  ${terrainSizeInPx}px; */
+    height: fit-content;
     background-color: ${colors.terrainColorNeutral};
 `
 
 export const ChunkPiece = styled.div`
-    height: ${chunkSizeInPx}px;
-    width: ${chunkSizeInPx}px;
+    height: ${actualSize}px;
+    width: ${actualSize}px;
     background-color: transparent;
-    border: 0.5px solid #000;
+    border: 1px solid ${colors.lightGrey};
 `
 
 export const ChunkRow = styled.div`
